@@ -9,7 +9,7 @@ const entriesRouter = require('./routes/entries');
 const app = express();
 
 // Middleware
-app.use(cors()); // Enable cross-origin requests
+app.use(cors({ origin: 'https://dailydose-fe.vercel.app' })); // Enable cross-origin requests
 app.use(express.json()); // Parse JSON bodies
 
 // Connect to MongoDB
