@@ -9,6 +9,7 @@ const entriesRouter = require('./routes/entries');
 const app = express();
 
 // Middleware
+const cors = require('cors');
 app.use(cors({ origin: 'https://dailydose-fe.vercel.app' })); // Enable cross-origin requests
 app.use(express.json()); // Parse JSON bodies
 
