@@ -8,7 +8,11 @@ const entriesRouter = require('./routes/entries');
 // Initialize Express app
 const app = express();
 
-const allowedOrigins = ['https://dailydose-fe-eta.vercel.app/', 'https://dailydose-server-kajs.onrender.com'];
+const allowedOrigins = [
+  'https://dailydose-fe-eta.vercel.app',
+  'http://localhost:5173',
+  'http://localhost:3000'
+];
 // Middleware
 // const cors = require('cors');
 app.use(cors({ origin:allowedOrigins, credentials:true })); // Enable cross-origin requests
